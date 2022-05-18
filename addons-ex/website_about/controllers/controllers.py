@@ -1,13 +1,20 @@
 # -*- coding: utf-8 -*-
 from odoo import http
 
+# show only the last n items in the database until I figure out how to deduplicate the records
+# should match the number of records in timeline.xml
+TIMELINE_ITEM_COUNT = 3
 
 class WebsiteAbout(http.Controller):
     @http.route('/about', auth='public', website=True)
     def index(self, **kw):
         text = http.request.env["website_about.models.text"]
+        # ms_id = http.request.env.ref("website_about.missionstatement")
+        timeline = http.request.env["website_about.models.timeline"].search([])[-TIMELINE_ITEM_COUNT:]
         return http.request.render('website_about.index', {
-            "ms_title": "aaaaaaaaa",
+            "missionstatement": text.search([("name", "=", "ms")], limit=1)[0],
+            "value": text.search([("name", "=", "val")], limit=1)[0],
+            "timeline_events": timeline
         })
 
 #     @http.route('/website_about/website_about/objects', auth='public')

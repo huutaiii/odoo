@@ -26,6 +26,8 @@
         'views/views.xml',
         'views/templates.xml',
         'templates/template_index.xml',
+        'data/text.xml',
+        'data/timeline.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

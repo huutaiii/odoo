@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- reminder: update controller when modifying this file because these records will be duplicated in odoo's database... somehow -->
+    <data>
+        <record model="website_about.models.timeline">
+            <field name="date">2020-3</field>
+            <field name="content">things done in this 2020/3</field>
+        </record>
+        <record model="website_about.models.timeline">
+            <field name="date">2020-4</field>
+            <field name="content">things done in this date</field>
+        </record>
+        <record model="website_about.models.timeline">
+            <field name="date">2020-5</field>
+            <field name="content">things done in this date</field>
+        </record>
+    </data>
+</odoo>

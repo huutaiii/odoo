@@ -21,5 +21,21 @@ class MText(models.Model):
     _name = 'website_about.models.text'
     _description = 'simple text box with title'
 
-    title = fields.Char()
-    content = fields.Char(required=True)
+    name = fields.Char()
+    title = fields.Text()
+    content = fields.Text()
+
+class MTimeline(models.Model):
+    _name = 'website_about.models.timeline'
+    _description = 'timeline events'
+
+    date = fields.Char()
+    content = fields.Text()
+
+class MEmployee(models.Model):
+    _name = 'website_about.models.employee'
+    _description = ''
+
+    name = fields.Char()
+    position = fields.Char()
+    description = fields.Text()

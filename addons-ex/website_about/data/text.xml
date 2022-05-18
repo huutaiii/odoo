@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
         <record id="missionstatement" model="website_about.models.text">
-            <field name="title">su menh</field>
-            <field name="content">missionstatement content</field>
+            <field name="name">ms</field>
+            <field name="title">Sứ mệnh</field>
+            <field name="content">(nội dung sứ mệnh)</field>
         </record>
         <record id="value" model="website_about.models.text">
-            <field name="title">gia tri cot loi</field>
-            <field name="content">value content</field>
+            <field name="name">val</field>
+            <field name="title">Giá trị cốt lõi</field>
+            <field name="content">(nội dung giá trị cốt lõi)</field>
         </record>
     </data>
 </odoo>
