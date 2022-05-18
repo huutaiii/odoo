@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <record id="missionstatement" model="website_about.models.text">
+            <field name="title">su menh</field>
+            <field name="content">missionstatement content</field>
+        </record>
+        <record id="value" model="website_about.models.text">
+            <field name="title">gia tri cot loi</field>
+            <field name="content">value content</field>
+        </record>
+    </data>
+</odoo>

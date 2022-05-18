@@ -1,0 +1,146 @@
+<odoo>
+    <template id="index">
+        <t name="About" t-name="website_about.index">
+        <t t-call="website.layout">
+            <t t-set="pageName" t-value="'about'"/>
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_parallax parallax s_parallax_is_fixed bg-black-50 o_colored_level pt120 pb152" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax" style="background-image: none;">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 75%;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="oe_structure oe_empty">
+                <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                    <h2 style="text-align: left;">
+                    <!-- Your Site Title -->
+                    <t t-out="ms_title" />
+                    </h2>
+                    </div>
+                </section>
+                <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                    <p class="o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    <p>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                    </div>
+                </section>
+                </div>
+            </section>
+            <section class="s_parallax o_colored_level s_parallax_no_overflow_hidden pt112 pb64" data-scroll-background-ratio="0" data-snippet="s_parallax" data-name="Parallax" style="background-image: none;"><div class="oe_structure oe_empty"><section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;"><div class="s_allow_columns container"><h2 style="text-align: left;">Your Site Title</h2></div></section><section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;"><div class="container s_allow_columns"><p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p><p>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b>for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p></div></section></div>k</section>
+            <section class="s_timeline pt24 pb48 o_colored_level" data-snippet="s_timeline" data-name="Timeline" style="background-image: none;">
+                <div class="container s_timeline_line">
+                <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+                    <div class="s_timeline_date">
+                    <span class="bg-white">
+                        <b class="o_default_snippet_text">2019</b>
+                    </span>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <h5 class="card-title o_default_snippet_text">Your title</h5>
+                        <p class="card-text o_default_snippet_text">A timeline is a graphical representation on which important events are marked.</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-1x fa-child bg-secondary rounded-circle s_timeline_icon"/>
+                    </div>
+                    <div class="s_timeline_content"/>
+                </div>
+                <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+                    <div class="s_timeline_date">
+                    <span class="bg-white">
+                        <b class="o_default_snippet_text">2018</b>
+                    </span>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <p class="card-text o_default_snippet_text">You can edit, duplicate...</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-1x fa-graduation-cap bg-secondary rounded-circle s_timeline_icon"/>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <i class="fa fa-1x fa-asterisk bg-secondary rounded-circle s_timeline_icon"/>
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <p class="card-text o_default_snippet_text">...and switch the timeline contents to fit your needs.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="s_timeline_row d-block d-md-flex flex-row-reverse" data-name="Row">
+                    <div class="s_timeline_date">
+                    <span class="bg-white">
+                        <b class="o_default_snippet_text">2015</b>
+                    </span>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Use this timeline as a part of your resume, to show your visitors what you've done in the past.</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-1x fa-bolt bg-secondary rounded-circle s_timeline_icon"/>
+                    </div>
+                    <div class="s_timeline_content"/>
+                </div>
+                </div>
+            </section>
+            <section class="s_company_team pt48 pb48 o_colored_level" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_1" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="273" data-original-src="/website/static/src/img/snippets_demo/s_team_member_1.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Tony Fred, CEO</h4>
+                        <p class="o_default_snippet_text">
+                                        Founder and chief visionary, Tony is the driving force behind the company. He loves
+                                        to keep his hands full by participating in the development of the software,
+                                        marketing, and customer experience strategies.
+                                    </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_2" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="274" data-original-src="/website/static/src/img/snippets_demo/s_team_member_2.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Mich Stark, COO</h4>
+                        <p class="o_default_snippet_text">Mich loves taking on challenges. With his multi-year experience as Commercial Director in the software industry, Mich has helped the company to get where it is today. Mich is among the best minds.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_3" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="275" data-original-src="/website/static/src/img/snippets_demo/s_team_member_3.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Aline Turner, CTO</h4>
+                        <p class="o_default_snippet_text">Aline is one of the iconic people in life who can say they love what they do. She mentors 100+ in-house developers and looks after the community of thousands of developers.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_4" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="276" data-original-src="/website/static/src/img/snippets_demo/s_team_member_4.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Iris Joe, CFO</h4>
+                        <p class="o_default_snippet_text">Iris, with her international experience, helps us easily understand the numbers and improves them. She is determined to drive success and delivers her professional acumen to bring the company to the next level.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            </div>
+        </t>
+        </t>
+    </template>
+</odoo>
