@@ -1,6 +1,9 @@
 <odoo>
   <template id="index">
     <t name="About" t-name="website_about.index">
+      <xpath expr="." position="inside">
+        <link rel='stylesheet' href="/website_about/static/src/template_index.css"/>
+      </xpath>
       <t t-call="website.layout">
         <t t-set="pageName" t-value="'about'" />
         <div id="wrap" class="oe_structure oe_empty">
@@ -64,10 +67,25 @@
           <section class="s_company_team pt48 pb48 o_colored_level" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
             <div class="container">
               <div class="row s_nb_column_fixed">
-                <div class="col-lg-6 pt24 pb24 o_colored_level">
+                <t t-foreach="employees" t-as="person">
+                  <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <div class="col-lg-4 pb16 o_not_editable">
+                        <!-- <img alt="" src="/web/image/website.s_company_team_image_1" class="img-fluid rounded-circle mx-auto anim-gs" loading="lazy" data-original-id="273" data-original-src="/website/static/src/img/snippets_demo/s_team_member_1.png" data-mimetype="image/png" /> -->
+                        <t t-raw="person.img_tag" />
+                      </div>
+                      <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text"><t t-esc="person.name" />, <t t-esc="person.position" /></h4>
+                        <p class="o_default_snippet_text"><t t-esc="person.description" /></p>
+                      </div>
+                    </div>
+                  </div>
+                </t>
+
+                <!-- <div class="col-lg-6 pt24 pb24 o_colored_level">
                   <div class="row s_col_no_resize s_col_no_bgcolor">
                     <div class="col-lg-4 pb16 o_not_editable">
-                      <img alt="" src="/web/image/website.s_company_team_image_1" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="273" data-original-src="/website/static/src/img/snippets_demo/s_team_member_1.png" data-mimetype="image/png" />
+                      <img alt="" src="/web/image/website.s_company_team_image_1" class="img-fluid rounded-circle mx-auto anim-gs" loading="lazy" data-original-id="273" data-original-src="/website/static/src/img/snippets_demo/s_team_member_1.png" data-mimetype="image/png" />
                     </div>
                     <div class="col-lg-8">
                       <h4 class="o_default_snippet_text">Tony Fred, CEO</h4>
@@ -111,7 +129,7 @@
                       <p class="o_default_snippet_text">Iris, with her international experience, helps us easily understand the numbers and improves them. She is determined to drive success and delivers her professional acumen to bring the company to the next level.</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>

@@ -20,6 +20,9 @@
     # any module necessary for this one to work correctly
     'depends': ['base', 'website'],
 
+    # 'css': [
+    #     'static/src/template_index.css'
+    # ],
     # always loaded
     'data': [
         'security/ir.model.access.csv',
@@ -28,6 +31,7 @@
         'templates/template_index.xml',
         'data/text.xml',
         'data/timeline.xml',
+        'data/employees.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

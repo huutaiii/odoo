@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_website_about_text,website_about.models.text,model_website_about_models_text,,1,1,1,1
 access_website_about_timeline,website_about.models.timeline,model_website_about_models_timeline,,1,1,1,1
+access_website_about_employee,website_about.models.employee,model_website_about_models_employee,,1,1,1,1

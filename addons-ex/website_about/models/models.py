@@ -39,3 +39,10 @@ class MEmployee(models.Model):
     name = fields.Char()
     position = fields.Char()
     description = fields.Text()
+    img_url = fields.Char()
+    img_tag = fields.Char(compute="get_img_tag")
+
+    @api.depends("img_url")
+    def get_img_tag(self):
+        for record in self:
+            record.img_tag = f'<img src="{record.img_url}" class="img-fluid rounded-circle mx-auto anim-gs" loading="lazy"/>'

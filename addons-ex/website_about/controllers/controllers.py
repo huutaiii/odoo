@@ -4,6 +4,8 @@ from odoo import http
 # show only the last n items in the database until I figure out how to deduplicate the records
 # should match the number of records in timeline.xml
 TIMELINE_ITEM_COUNT = 3
+# number of records in employees.xml
+EMPLOYEE_COUNT = 3
 
 class WebsiteAbout(http.Controller):
     @http.route('/about', auth='public', website=True)
@@ -11,10 +13,13 @@ class WebsiteAbout(http.Controller):
         text = http.request.env["website_about.models.text"]
         # ms_id = http.request.env.ref("website_about.missionstatement")
         timeline = http.request.env["website_about.models.timeline"].search([])[-TIMELINE_ITEM_COUNT:]
+        employees = http.request.env["website_about.models.employee"].search([])[-EMPLOYEE_COUNT:]
+        
         return http.request.render('website_about.index', {
             "missionstatement": text.search([("name", "=", "ms")], limit=1)[0],
             "value": text.search([("name", "=", "val")], limit=1)[0],
-            "timeline_events": timeline
+            "timeline_events": timeline,
+            "employees": employees,
         })
 
 #     @http.route('/website_about/website_about/objects', auth='public')

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- ***update record count in controllers when editing this*** -->
+    <data>
+        <record model="website_about.models.employee">
+            <field name="name">Tony Fred</field>
+            <field name="position">CEO</field>
+            <field name="description">Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the software, marketing, and customer experience strategies.</field>
+            <field name="img_url">/website_about/static/src/download.png</field>
+        </record>
+        <record model="website_about.models.employee">
+            <field name="name">Mich Stark</field>
+            <field name="position">COO</field>
+            <field name="description">Mich loves taking on challenges. With his multi-year experience as Commercial Director in the software industry, Mich has helped the company to get where it is today. Mich is among the best minds.</field>
+            <field name="img_url">/website_about/static/src/download (1).png</field>
+        </record>
+        <record model="website_about.models.employee">
+            <field name="name">Aline Turner</field>
+            <field name="position">CTO</field>
+            <field name="description">Aline is one of the iconic people in life who can say they love what they do. She mentors 100+ in-house developers and looks after the community of thousands of developers.</field>
+            <field name="img_url">/website_about/static/src/download (2).png</field>
+        </record>
+        <!-- <record model="website_about.models.employee">
+            <field name="name">Iris Joe</field>
+            <field name="position">CFO</field>
+            <field name="description">Iris, with her international experience, helps us easily understand the numbers and improves them. She is determined to drive success and delivers her professional acumen to bring the company to the next level.</field>
+            <field name="img_url">/website_about/static/src/download (3).png</field>
+        </record> -->
+    </data>
+</odoo>

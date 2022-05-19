@@ -1,0 +1,11 @@
+.anim-gs {
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+.anim-gs:hover {
+    filter: none;
+    box-shadow: 0pt 1.5pt 6pt gray;
+}
+.s_company_team div {
+    margin: auto;
+}
