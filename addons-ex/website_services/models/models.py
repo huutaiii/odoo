@@ -24,25 +24,3 @@ class MText(models.Model):
     name = fields.Char()
     title = fields.Text()
     content = fields.Text()
-
-class MTimeline(models.Model):
-    _name = 'website_about.models.timeline'
-    _description = 'timeline events'
-
-    date = fields.Char()
-    content = fields.Text()
-
-class MEmployee(models.Model):
-    _name = 'website_about.models.employee'
-    _description = ''
-
-    name = fields.Char()
-    position = fields.Char()
-    description = fields.Text()
-    img_url = fields.Char()
-    img_tag = fields.Char(compute="get_img_tag")
-
-    @api.depends("img_url")
-    def get_img_tag(self):
-        for record in self:
-            record.img_tag = f'<img src="{record.img_url}" class="img-fluid rounded-circle mx-auto anim-gs" loading="lazy"/>'
