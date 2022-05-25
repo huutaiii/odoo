@@ -1,0 +1,57 @@
+<odoo>
+  <template id="index">
+    <t name="About" t-name="website_services.index">
+      <xpath expr="." position="inside">
+        <link rel='stylesheet' href="/website_services/static/src/template_index.css"/>
+      </xpath>
+      <t name="Homepage" t-name="website.homepage1">
+        <t t-call="website.layout">
+          <t t-set="pageName" t-value="'homepage'"/>
+          <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"/>
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="container s_allow_columns">
+                <h1 style="text-align: center;">
+                  <font style="font-size: 62px; font-weight: bold;" class="o_default_snippet_text">Startup phần mềm tiuSolution</font>
+                </h1>
+                <!-- <p class="lead o_default_snippet_text" style="text-align: center;">Viết một hoặc hai đoạn văn mô tả sản phẩm, dịch vụ hoặc một tính năng cụ thể.<br/> Để thành công, nội dung bạn viết cần phải hữu ích cho người đọc.</p> -->
+                <p style="text-align: center; margin-top: 24pt">
+                  <a class="btn btn-primary mb-2 o_default_snippet_text" href="/vi/contactus">Liên hệ</a>
+                </p>
+              </div>
+            </section>
+            <section class="s_features pt32 pb32 o_colored_level" data-snippet="s_features" data-name="Features" style="background-image: none; margin: 32pt 0px 0px;">
+              <h1 style="text-align: center;">Nền tảng, công nghệ</h1>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                    <div class="img-fixed-200">
+                      <img class="img-fluid o_we_custom_image fa-3x rounded" src="/web/image/327-bc29eac4/logo.png" alt="" loading="lazy"/>
+                    </div>
+                    <h3>Odoo<br/></h3>
+                    <p>Odoo là bộ ứng dụng kinh doanh có mã nguồn mở đáp ứng tất cả các nhu cầu của công ty.<br/></p>
+                  </div>
+                  <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                    
+                    <div class="img-fixed-200">
+
+                      <img class="img-fluid o_we_custom_image fa-3x rounded" src="/website_services/static/src/devops.png" alt="" loading="lazy"/>
+                    </div>
+                    <h3>Azure DevOps<br/></h3>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_embed_code o_half_screen_height o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;">
+              <div class="s_embed_code_embedded container o_not_editable">
+                <iframe src="https://www.youtube.com/embed/5qap5aO4i9A?muted=1;autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="640" height="360" frameborder="0"/>
+              </div>
+            </section>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>
