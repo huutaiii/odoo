@@ -1,2 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_website_about_text,website_about.models.text,model_website_about_models_text,,1,1,1,1
+access_website_services_title,website_services.models.title,model_website_services_models_title,,1,1,1,1
+access_website_services_text,website_services.models.text,model_website_services_models_text,,1,1,1,1
+access_website_services_ytembed,website_services.models.ytembed,model_website_services_models_ytembed,,1,1,1,1
+access_website_services_tech,website_services.models.tech,model_website_services_models_tech,,1,1,1,1
+access_website_services_catalog,website_services.models.catalog,model_website_services_models_catalog,,1,1,1,1

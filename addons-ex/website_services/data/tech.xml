@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="odoo" model="website_services.models.tech">
+            <field name="name">odoo</field>
+            <field name="display_name">Odoo</field>
+            <field name="description"></field>
+            <field name="img_url">/web/image/327-bc29eac4/logo.png</field>
+        </record>
+        <record id="azure" model="website_services.models.tech">
+            <field name="name">azure</field>
+            <field name="display_name">Azure DevOps</field>
+            <field name="description"></field>
+            <field name="img_url">https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/220px-Microsoft_Azure.svg.png</field>
+        </record>
+        <record id="aws" model="website_services.models.tech">
+            <field name="name">aws</field>
+            <field name="display_name">Amazon Web Services</field>
+            <field name="description"></field>
+            <field name="img_url">https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/150px-Amazon_Web_Services_Logo.svg.png</field>
+        </record>
+    </data>
+</odoo>

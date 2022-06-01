@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="website_about.list">
+    <record model="ir.ui.view" id="website_services.list">
       <field name="name">WebsiteAbout list</field>
-      <field name="model">website_about.website_about</field>
+      <field name="model">website_services.website_services</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,18 +17,18 @@
 
     <!-- actions opening views on models -->
 <!--
-    <record model="ir.actions.act_window" id="website_about.action_window">
+    <record model="ir.actions.act_window" id="website_services.action_window">
       <field name="name">WebsiteAbout window</field>
-      <field name="res_model">website_about.website_about</field>
+      <field name="res_model">website_services.website_services</field>
       <field name="view_mode">tree,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="website_about.action_server">
+    <record model="ir.actions.server" id="website_services.action_server">
       <field name="name">WebsiteAbout server</field>
-      <field name="model_id" ref="model_website_about_website_about"/>
+      <field name="model_id" ref="model_website_services_website_services"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -42,19 +42,19 @@
 
     <!-- Top menu item -->
 <!--
-    <menuitem name="WebsiteAbout" id="website_about.menu_root"/>
+    <menuitem name="WebsiteAbout" id="website_services.menu_root"/>
 -->
     <!-- menu categories -->
 <!--
-    <menuitem name="Menu 1" id="website_about.menu_1" parent="website_about.menu_root"/>
-    <menuitem name="Menu 2" id="website_about.menu_2" parent="website_about.menu_root"/>
+    <menuitem name="Menu 1" id="website_services.menu_1" parent="website_services.menu_root"/>
+    <menuitem name="Menu 2" id="website_services.menu_2" parent="website_services.menu_root"/>
 -->
     <!-- actions -->
 <!--
-    <menuitem name="List" id="website_about.menu_1_list" parent="website_about.menu_1"
-              action="website_about.action_window"/>
-    <menuitem name="Server to list" id="website_about" parent="website_about.menu_2"
-              action="website_about.action_server"/>
+    <menuitem name="List" id="website_services.menu_1_list" parent="website_services.menu_1"
+              action="website_services.action_window"/>
+    <menuitem name="Server to list" id="website_services" parent="website_services.menu_2"
+              action="website_services.action_server"/>
 -->
   </data>
 </odoo>

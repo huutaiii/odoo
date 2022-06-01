@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="website_services.models.catalog">
+            <field name="name">catalogitem1</field>
+            <field name="title">(item)</field>
+            <field name="content"></field>
+        </record>
+
+        <record model="website_services.models.catalog">
+            <field name="name">catalogitem2</field>
+            <field name="title">(item)</field>
+            <field name="content"></field>
+        </record>
+    </data>
+</odoo>

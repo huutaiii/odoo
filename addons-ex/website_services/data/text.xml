@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="missionstatement" model="website_about.models.text">
-            <field name="name">ms</field>
-            <field name="title">Sứ mệnh</field>
-            <field name="content">(nội dung sứ mệnh)</field>
+        <record model="website_services.models.text">
+            <field name="name">banner</field>
+            <field name="title">(banner title)</field>
+            <field name="content">(banner sub-title)</field>
         </record>
-        <record id="value" model="website_about.models.text">
-            <field name="name">val</field>
-            <field name="title">Giá trị cốt lõi</field>
-            <field name="content">(nội dung giá trị cốt lõi)</field>
+
+        <record model="website_services.models.title">
+            <field name="name">catalog</field>
+            <field name="title">(catalog title)</field>
+        </record>
+
+        <record model="website_services.models.text">
+            <field name="name">servicesdesc</field>
+            <field name="title">services description title</field>
+            <field name="content">services description...</field>
         </record>
     </data>
 </odoo>

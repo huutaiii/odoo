@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "WebsiteAbout",
+    'name': "WebsiteService",
 
     'summary': """
     """,
@@ -8,7 +8,7 @@
     'description': """
     """,
 
-    'author': "tiuSolution (team 3)",
+    'author': "tiuSolution",
     # 'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -30,9 +30,8 @@
         'views/templates.xml',
         'templates/template_index.xml',
         'data/text.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+        'data/embed.xml',
+        'data/tech.xml',
+        'data/services.xml',
+    ]
 }

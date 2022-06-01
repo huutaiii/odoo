@@ -1,4 +1,4 @@
-.anim-gs {
+/* .anim-gs {
     filter: grayscale(100%);
     transition: all 0.3s ease-in-out;
 }
@@ -8,9 +8,34 @@
 }
 .s_company_team div {
     margin: auto;
-}
+} */
 .img-fixed-200 {
     width: 200px;
     height: 200px;
     margin: auto;
+    position: relative;
+}
+.tech_img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.tech_name {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0;
+    background-color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+.tech_name:hover {
+    opacity: 1.0;
+}
+.ytembed {
+    margin: 8pt 24pt;
 }
