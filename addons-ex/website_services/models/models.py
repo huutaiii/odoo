@@ -41,6 +41,7 @@ class MYTEmbed(models.Model):
     _description = 'embeded youtube player'
 
     name = fields.Char()
+    description = fields.Char()
     url = fields.Char()
     props = fields.Char()
     iframe = fields.Char(readonly=True, compute="compute_iframes")

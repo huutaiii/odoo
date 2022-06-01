@@ -44,6 +44,7 @@ class WebsiteAbout(http.Controller):
             "banner": http.request.env["website_services.models.text"].search([("name", "=", "banner")], limit=1)[0],
             "catalogtitle": http.request.env["website_services.models.title"].search([("name", "=", "catalog")], limit=1)[0],
             "catalogitems": http.request.env["website_services.models.catalog"].search([])[-CATALOG_ITEM_COUNT:],
+            "techtitle": http.request.env["website_services.models.title"].search([("name", "=", "techtitle")], limit=1)[0],
             # "missionstatement": text.search([("name", "=", "ms")], limit=1)[0],
             # "value": text.search([("name", "=", "val")], limit=1)[0],
             # "timeline_events": timeline,

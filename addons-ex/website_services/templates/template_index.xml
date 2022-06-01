@@ -25,7 +25,7 @@
               </div>
             </section>
 
-            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none; background-color: var(--200); ">
               <div class="container s_allow_columns">
                 <h2><t t-esc="servicesdesc.title"></t></h2>
                 <p class="o_default_snippet_text"><t t-esc="servicesdesc.content"></t></p>
@@ -33,7 +33,7 @@
             </section>
 
             <section class="s_features pt32 pb32 o_colored_level" data-snippet="s_features" data-name="Features" style="background-image: none; margin: 32pt 0px 0px;">
-              <h1 style="text-align: center;">(tiêu đề nền tảng, công nghệ)</h1>
+              <h1 style="text-align: center; margin: 16pt;"><t t-esc="techtitle.title"></t></h1>
               <div class="container">
                 <div class="row">
                   <t t-foreach="techs" t-as="tech">
@@ -42,8 +42,10 @@
                         <!-- <img class="img-fluid o_we_custom_image fa-3x rounded" src="/web/image/327-bc29eac4/logo.png" alt="" loading="lazy" /> -->
                         <t t-raw="tech.img"></t>
                       </div>
-                      <h3 class="tech_name"><t t-esc="tech.display_name"></t></h3>
-                      <p class="tect_desc"><t t-esc="tech.description"></t></p>
+                      <div class="tech_details">
+                        <h3 class="tech_name"><t t-esc="tech.display_name"></t></h3>
+                        <p class="tech_desc"><t t-esc="tech.description"></t></p>
+                      </div>
                     </div>
                   </t> <!-- foreach -->
                 </div> <!-- class="row" -->
@@ -72,9 +74,12 @@
             </section>
       
             <section class="s_embed_code o_half_screen_height o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;">
-              <div class="s_embed_code_embedded container o_not_editable" style="display: flex;">
+              <div class="s_embed_code_embedded container o_not_editable" style="display: flex; flex-wrap: wrap; align-content: center; justify-content: center;">
                 <t t-foreach="yt" t-as="y">
-                  <t t-raw="y.iframe" />
+                  <div style="display: flex; flex-direction: column; margin: 16pt 0pt; ">
+                    <t t-raw="y.iframe" />
+                    <t t-esc="y.description" />
+                  </div>
                 </t>
               </div>
             </section>

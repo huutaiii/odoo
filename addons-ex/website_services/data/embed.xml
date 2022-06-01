@@ -3,11 +3,13 @@
     <data>
         <record id="1" model="website_services.models.ytembed">
             <field name="name">1</field>
+            <field name="description">video description</field>
             <field name="url">https://www.youtube.com/embed/n8v_Tb43ESk</field>
             <field name="props">title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="640" height="360" frameborder="0"</field>
         </record>
         <record id="2" model="website_services.models.ytembed">
             <field name="name">2</field>
+            <field name="description">video description</field>
             <field name="url">https://www.youtube.com/embed/pImRJRs6uIM</field>
             <field name="props">title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="640" height="360" frameborder="0"</field>
         </record>

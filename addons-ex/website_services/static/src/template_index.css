@@ -15,13 +15,13 @@
     margin: auto;
     position: relative;
 }
-.tech_img {
+.tech-img {
     position: relative;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
-.tech_name {
+.tech_details {
     position: absolute;
     /* width: 100%;
     height: 100%; */
@@ -32,8 +32,14 @@
     opacity: 0;
     background-color: var(--primary);
     transition: all 0.3s ease-in-out;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.tech_name:hover {
+.tech_details:hover {
     opacity: 1.0;
 }
 .ytembed {

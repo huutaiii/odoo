@@ -17,5 +17,10 @@
             <field name="title">services description title</field>
             <field name="content">services description...</field>
         </record>
+
+        <record model="website_services.models.title">
+            <field name="name">techtitle</field>
+            <field name="title">(tiêu đề nền tảng, công nghệ)</field>
+        </record>
     </data>
 </odoo>
